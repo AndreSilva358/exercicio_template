@@ -1,4 +1,3 @@
-
 Estrutura de pastas:
 
 * src\models: Nesse caso um modelo simples de uma classe que representa um projeto.
