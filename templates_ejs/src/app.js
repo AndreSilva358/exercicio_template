@@ -14,13 +14,15 @@ app.set('views', './views');
 /* Configurando o diretório que serve arquivos estáticos.*/
 app.use(express.static('public'));
 
+app.get('/', listProjectHandler);
+
+app.listen(port, listenHandler);
+
 app.get('/projetos', projetosHandler);
 
 app.get('/perfil', perfilHandler);
 
-app.get('/', perfilHandler);
 
-app.listen(port, listenHandler);
 
 function perfilHandler(req, res){
     res.render('perfil.ejs',{});    
@@ -31,10 +33,13 @@ function projetosHandler(req, res){
 }
 
 function listProjectHandler(req, res){
-    let projeto_1 = new lista_projetos("linguagem","HTML", 2021,); 
-    let projeto_2 = new lista_projetos("empresa","",2022);
-    let projeto_3 = new lista_projetos("linguagem","Javascript", 2023, 2021);    
+    let projeto_1 = new Projeto("linguagem","HTML", 2021,); 
+    let projeto_2 = new Projeto("empresa","",2022);
+    let projeto_3 = new Projeto("linguagem","Javascript", 2023, 2021);    
     let projetos = [];
+    projetos.push(projeto_1);
+    projetos.push(projeto_2);
+    projetos.push(projeto_3);
     
     let lista_projetos = [
         
@@ -53,6 +58,7 @@ function listProjectHandler(req, res){
 
 
     ]
+
 
     res.render('projetos.ejs',{lista_projetos: lista_projetos});    
 }
