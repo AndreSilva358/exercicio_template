@@ -1,7 +1,3 @@
-# Exemplos de desenvolvimento full stack com JavaScript
-
-## Fabrício Galende Marques de Carvalho, Ph.D
-
 Listagem de exemplos:
 
 * executando_codigo_js: exemplos de execução de código JS tanto no front end como no back end.
