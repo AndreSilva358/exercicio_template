@@ -1,22 +1,25 @@
 <%-include('base_header') -%>
     <body>
         <%-include('navbar') -%>
-        <ul>       
-        <% for(var i=0; i< lista_projetos.length; ++i) { %>
+        <ul>
+                   
+         <% for(var i=0; i< lista_projetos.length; ++i) { %>
             <li>
-        <span class="descritor">Linguagem do Projeto:</span> 
-        <%=lista_projetos[i].linguagem %><br/>
-        <% if(lista_projetos[i].linguagem =="software") { %>
-        
-            <span class="descritor">Empresa:</span> 
-        <%=lista_projetos[i].empresa %><br/>
-        <% } %>
-        
-        <span class="descritor">Equipe:</span> 
-        <%=lista_projetos[i].equipe %> <br/>
-        
-        <span class="descritor">Papel:</span> 
-        <%=lista_projetos[i].papel %>
+                <span class="descritor">Linguagem do Projeto:</span> 
+                <%=lista_projetos[i].linguagem %><br/>
+                <% if(lista_projetos[i].linguagem =="software") { %>
+                
+                <span class="descritor">Empresa:</span> 
+                <%=lista_projetos[i].empresa %><br/>
+                <% } %>
+                
+                <span class="descritor">Equipe:</span> 
+                <%=lista_projetos[i].equipe %> <br/>
+                
+                <span class="descritor">Papel:</span> 
+                <%=lista_projetos[i].papel %>
+
+
             </li> 
         <% } %> 
         </ul> 
