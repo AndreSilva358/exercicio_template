@@ -1,9 +1,9 @@
 class Projeto{
-    constructor(tipo, tecnologia, inicio, fim){
+    constructor(tipo, empresa, equipe, papel){
         this.tipo = tipo;
-        this.tecnologia = tecnologia;
-        this.inicio = inicio;
-        this.fim = fim;
+        this.empresa = empresa;
+        this.equipe = equipe;
+        this.papel = papel;
 
     }
 }

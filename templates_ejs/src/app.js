@@ -31,10 +31,11 @@ function projetosHandler(req, res){
 }
 
 function listProjectHandler(req, res){
-    let projeto_1 = new Projeto("software","JavaScript", 2020, 2023); 
-    let projeto_2 = new Projeto("social","",2020,2021);
-    let projeto_3 = new Projeto("software","HTML", 2021, 2021);    
+    let projeto_1 = new lista_projetos("linguagem","HTML", 2021,); 
+    let projeto_2 = new lista_projetos("empresa","",2022);
+    let projeto_3 = new lista_projetos("linguagem","Javascript", 2023, 2021);    
     let projetos = [];
+    
     let lista_projetos = [
         
         { 
@@ -53,12 +54,7 @@ function listProjectHandler(req, res){
 
     ]
 
-
-
-    projetos.push(projeto_1);
-    projetos.push(projeto_2);
-    projetos.push(projeto_3);
-    res.render('projetos.ejs',{lista_projetos: projetos});    
+    res.render('projetos.ejs',{lista_projetos: lista_projetos});    
 }
 
 function listenHandler(){

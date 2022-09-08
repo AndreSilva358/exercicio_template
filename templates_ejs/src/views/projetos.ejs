@@ -1,8 +1,24 @@
 <%-include('base_header') -%>
     <body>
         <%-include('navbar') -%>
-        Oh my God, booba!
+        
+        Oh my God!
+        
         <% for(var i=0; i< lista_projetos.length; ++i) { %>
-            
+
+        <span class="descritor">Linguagem do Projeto:</span> 
+        <%=lista_projetos[i].tipo %><br/>
+        <% if(lista_projetos[i].tipo =="software") { %>
+        
+            <span class="descritor">Empresa:</span> 
+        <%=lista_projetos[i].empresa %><br/>
+        <% } %>
+        
+        <span class="descritor">Equipe:</span> 
+        <%=lista_projetos[i].equipe %> <br/>
+        
+        <span class="descritor">Papel:</span> 
+        <%=lista_projetos[i].papel %>
+        <% } %> 
     </body>
 <%-include('base_footer') -%>
