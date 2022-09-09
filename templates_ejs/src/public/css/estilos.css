@@ -6,25 +6,7 @@ body{
     margin-bottom: 10px;
 }
 
-/* unvisited link */
-.navbar:link{
-    color: green;
-}
-  
-  /* visited link */
-  .navbar:visited{
-    color: yellow;
-}
-  
-  /* mouse over link */
-  .navbar:hover{
-    color: hotpink;
-}
-  
-  /* selected link */
-  .navbar:active{
-    color: rgb(157, 255, 0);
-}
+a{ margin-right: 10px;}
 
 ul{
   list-style: none;
@@ -37,11 +19,11 @@ li{
   margin-top: 10pt;
   width: 150pt;
   height: 150pt;
-  background-color: royalblue;
-  border-radius: 20%;
+  background-color: rgba(123, 161, 51, 0.945);
+  border-radius: 8%;
   text-align: center;
   padding-top: 70pt;
-  border-color: gold;
+  border-color: rgb(131, 77, 6);
   border-style: solid;
 }
 
